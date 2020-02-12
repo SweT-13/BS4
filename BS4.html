@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>BS4</title>
+    <style>
+        #navbar {
+            background-color: #333; /* Black background color */
+            position: fixed; /* Make it stick/fixed */
+            top: 0; /* Stay on top */
+            width: 100%; /* Full width */
+            transition: top 0.3s; /* Transition effect when sliding down (and up) */
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Style the navbar links */
+        #navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div id="navbar">
+    <a href="#teg&class">Teg&Class</a>
+    <a href="#text-style">Text_style</a>
+    <a href="#images">Images</a>
+    <a href="#button">Button</a>
+    <a href="#badge">Badge</a>
+    <a href="#collapse">Collapse</a>
+    <a href="#icons">Icons</a>
+</div>
+<div class="container" style="margin: 50px auto;">
+    <a name="teg&class"></a>
+    <h1>Teg&Class</h1>
+    <div class="teg&class" style="margin-bottom: 20px; background: #e2e2e2;padding: 10px;">
+        <div>
+            <mark>teg mark</mark>
+        </div>
+        <div><abbr title="title">teg abbr</abbr></div>
+        <div><code>teg code</code></div>
+        <div><kbd>teg + kbd</kbd></div>
+        <p class="text-left">.text-left</p>
+        <p class="text-right">.text-right</p>
+        <p class="text-center">.text-center</p>
+        <p class="text-justify">.text-justify .text-justify .text-justify .text-justify .text-justify .text-justify
+            .text-justify .text-justify</p>
+        <p class="text-nowrap">.text-nowrap .text-nowrap .text-nowrap .text-nowrap .text-nowrap .text-nowrap
+            .text-nowrap .text-nowrap</p>
+        <p class="text-lowercase">.text-lowercase</p>
+        <p class="text-uppercase">.text-uppercase</p>
+        <p class="text-capitalize">.text-capitalize</p>
+    </div>
+
+    <a name="text-style"></a>
+    <h1>Text-style</h1>
+    <div class="text-style" style="margin-bottom: 20px; background: #e2e2e2;padding: 10px;">
+        <div class="text-muted">.text-muted</div>
+        <div class="text-primary">.text-primary</div>
+        <div class="text-success">.text-success</div>
+        <div class="text-info">.text-info</div>
+        <div class="text-warning">.text-warning</div>
+        <div class="text-danger">.text-danger</div>
+        <div class="text-secondary">.text-secondary</div>
+        <div class="text-white">.text-white</div>
+        <div class="text-dark">.text-dark</div>
+        <div class="text-body">.text-body</div>
+        <div class="text-light">.text-light</div>
+        <div class="text-black-50">.text-black-50</div>
+        <div class="text-white-50">.text-white-50</div>
+        <div class="bg-primary">.bg-primary</div>
+        <div class="bg-success">.bg-success</div>
+        <div class="bg-info">.bg-info</div>
+        <div class="bg-warning">.bg-warning</div>
+        <div class="bg-danger">.bg-danger</div>
+        <div class="bg-secondary">.bg-secondary</div>
+        <div class="bg-darkи">.bg-darkи</div>
+        <div class="bg-light">.bg-light</div>
+    </div>
+
+    <a name="images"></a>
+    <h1>Images</h1>
+    <div class="images" style="margin-bottom: 220px; background: #e2e2e2;padding: 10px;">
+        <div>
+            <img src="https://pngicon.ru/file/uploads/instagram.png"
+                 alt="" class="mx-auto d-block" width="250px" height="250px">.mx-auto .d-block
+        </div>
+        <div>
+            <img src="https://pngicon.ru/file/uploads/instagram.png"
+                 alt="" class="img-thumbnail" width="250px" height="250px">.img-thumbnail
+        </div>
+        <div>
+            <img src="https://pngicon.ru/file/uploads/instagram.png"
+                 alt="" class="rounded-circle" width="250px" height="250px">.rounded-circle
+        </div>
+        <div>
+            <img src="https://pngicon.ru/file/uploads/instagram.png"
+                 alt="" class="float-left" width="250px" height="250px">.float-left
+            <img src="https://pngicon.ru/file/uploads/instagram.png"
+                 alt="" class="float-right" width="250px" height="250px"><br>.float-right
+        </div>
+    </div>
+
+    <a name="button"></a>
+    <h1>Button</h1>
+    <div class="button" style="margin-bottom: 20px; background: #e2e2e2; padding: 10px;">
+        <div style="margin-bottom: 10px;">
+            <button type="button" class="btn">.btn</button>
+            <button type="button" class="btn btn-primary">.btn-primary</button>
+            <button type="button" class="btn btn-secondary">.btn-secondary</button>
+            <button type="button" class="btn btn-success">.btn-success</button>
+            <button type="button" class="btn btn-info">.btn-info</button>
+            <button type="button" class="btn btn-warning">.btn-warning</button>
+            <button type="button" class="btn btn-danger">.btn-danger</button>
+            <button type="button" class="btn btn-dark">.btn-dark</button>
+            <button type="button" class="btn btn-light">.btn-light</button>
+            <button type="button" class="btn btn-link">.btn-link</button>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <button type="button" class="btn btn-outline-primary">.btn-outline-primary</button>
+            <button type="button" class="btn btn-outline-secondary">.btn-outline-secondary</button>
+            <button type="button" class="btn btn-outline-success">.btn-outline-success</button>
+            <button type="button" class="btn btn-outline-info">.btn-outline-info</button>
+            <button type="button" class="btn btn-outline-warning">.btn-outline-warning</button>
+            <button type="button" class="btn btn-outline-danger">.btn-outline-danger</button>
+            <button type="button" class="btn btn-outline-dark">.btn-outline-dark</button>
+            <button type="button" class="btn btn-outline-light text-dark">.btn-outline-light .text-dark</button>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <button type="button" class="btn btn-primary btn-lg">.btn-lg</button>
+            <button type="button" class="btn btn-primary">.btn</button>
+            <button type="button" class="btn btn-primary btn-sm">.btn-sm</button>
+            <button type="button" class="btn btn-primary active">.active</button>
+        </div>
+        <button type="button" class="btn btn-primary btn-block">.btn-block</button>
+        <span class="spinner-border spinner-border-sm text-danger"></span>.spinner-border .spinner-border-sm
+        .text-danger
+        <span class="spinner-grow spinner-grow-sm"></span>.spinner-grow .spinner-grow-sm
+    </div>
+
+    <a name="badge"></a>
+    <h1>Badge</h1>
+    <div class="badge" style="margin-bottom: 20px; background: #e2e2e2; padding: 10px; font-size: larger;">
+        <span class="badge badge-primary">.badge-primary</span>
+        <span class="badge badge-secondary">.badge-secondary</span>
+        <span class="badge badge-success">.badge-success</span>
+        <span class="badge badge-danger">.badge-danger</span><br>
+        <span class="badge badge-warning">.badge-warning</span>
+        <span class="badge badge-info">.badge-info</span>
+        <span class="badge badge-light">.badge-light</span>
+        <span class="badge badge-dark">.badge-dark</span>
+        <span class="badge badge-pill badge-primary">.badge-pill .badge-*</span>
+    </div>
+
+    <a name="collapse"></a>
+    <h1>Collapse</h1>
+    <div class="collapses" style="margin-bottom: 20px; background: #e2e2e2; padding: 10px;">
+        <div style="margin-bottom: 5px;">
+            <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+            or
+            <a href="#demo" data-toggle="collapse">Collapsible</a></div>
+        <div id="demo" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <pre style="background: #fff; padding: 5px">
+&lt;button data-toggle="collapse" data-target="#demo"&gt;Collapse&lt;/button&gt;
+            or
+&lt;a href="#demo" data-toggle="collapse"&gt;Collapsible&lt;/a&gt;
+///
+&lt;div id="demo" class="collapse"&gt;
+    Lorem ipsum dolor text....
+&lt;/div&gt;
+</pre>
+        <code>.show</code> для отображения по умолчанию
+    </div>
+
+    <a name="icons"></a>
+    <h1>Icons</h1>
+    <div class="icons" style="margin-bottom: 20px; background: #e2e2e2; padding: 10px;">
+
+        <p>Link and add class or to <code>&lt;i&gt;</code> or to <code>&lt;span&gt;</code><br></p>
+        <p><i>&lt;link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+            crossorigin="anonymous"&gt;</i></p>
+        <i class="fas fa-cloud"></i> .fa-cloud<br>
+        <i class="fas fa-coffee"></i> .fa-coffee<br>
+        <i class="fas fa-car"></i> .fa-car<br>
+        <i class="fas fa-file"></i> .fa-file<br>
+        <i class="fas fa-bars"></i> .fa-bars<br>
+        <a href="https://www.w3schools.com/icons/default.asp">Инфа про значки</a>
+    </div>
+
+    <a href="https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp">Больше на w3schools.com</a>
+</div>
+</body>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+</html>
